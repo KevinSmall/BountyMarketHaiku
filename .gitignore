@@ -1,0 +1,10 @@
+# Node
+/node_modules/
+
+# Truffle build
+/[Bb]uild/
+/[Bb]uilds/
+
+# Visual Studio
+.vs/
+/.vs/

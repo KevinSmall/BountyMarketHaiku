@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Haiku</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-8 col-sm-push-2">
+          
+          <h4 id="ethAddress">Your Address</h4>
+          <hr/>
+          .............................. Bounty Description ............. Ether (1-10) 
+          <br/>
+          <button type="button" class = "btn btn-primary btn-bcreate" data-id="0">Create Bounty</button>
+          <input type="text" id="btnCreateBountyDesc" name="bountyDesc" placeholder="Haiku Description" maxlength="60">          
+          <input type="number" id="btnCreateBountyEther" name="ether" min="1" max="10">
+          <br/>          
+          <br/>
+          
+          ................................ Bounty Id .. Proposal Description
+          <br/>
+          <button type="button" class = "btn btn-primary btn-pcreate" data-id="0">Create Proposal</button>          
+          <input type="number" id="btnCreateProposalBountyId" name="bountyId" min="0" max="15" placeholder="0"> 
+          <input type="text" id="btnCreateProposalDesc" name="proposalDesc" placeholder="Haiku Poem Proposal" maxlength="60">
+          <br/>
+          <br/>
+          
+          .................... Bounty Id . Proposal Id
+          <br/>          
+          <button type="button" class = "btn btn-primary btn-papprove" data-id="0">Approve</button>
+          <input type="number" id="btnApproveBountyId" name="bountyId" min="0" max="15" placeholder="0"> 
+          <input type="number" id="btnApproveProposalId" name="proposalId" min="0" max="15" placeholder="0"> 
+          <br/>
+          <br/>
+          
+          ................. Bounty Id . Proposal Id
+          <br/>
+          <button type="button" class = "btn btn-primary btn-preject" data-id="0">Reject</button>
+          <input type="number" id="btnRejectBountyId" name="bountyId" min="0" max="15" placeholder="0"> 
+          <input type="number" id="btnRejectProposalId" name="proposalId" min="0" max="15" placeholder="0"> 
+          <br/>
+          <br/>
+          
+          <br>
+          <button type="button" class = "btn btn-primary btn-withdraw" data-id="0">Withdraw</button> (withdraw all funds owed to my address)
+          <br/>
+          <br/>
+          
+          <hr/>          
+          Haiku Market Total Available Balance: <input type="text" id="uiMarketBalance" name="marketBalance" placeholder="0" readonly> Ether
+          <hr/>          
+        </div>
+      </div>
+
+      <div id="petsRow" class="row">
+        <!-- PETS LOAD HERE -->
+      </div>
+    </div>
+
+    <div id="petTemplate" style="display: none;">
+      <!-- <div class="well well-lg">Large Well -->
+      <div class="col-md-6 col-md-6">
+        <div class="panel panel-default panel-pet">
+          <div class="panel-heading">
+            <h3 class="panel-title">Scrappy</h3>
+          </div>
+          <div class="panel-body">
+            <!--<img alt="140x140" data-src="holder.js/140x140" class="img-rounded img-center" style="width: 100%;" src="https://animalso.com/wp-content/uploads/2017/01/Golden-Retriever_6.jpg" data-holder-rendered="true">-->
+            <!--<br/><br/>-->
+            <strong>Haiku</strong>: <span class="pet-breed">Golden Retriever</span><br/>
+            <strong>Value (Ether)</strong>: <span class="pet-age">3</span><br/>
+            <strong>Owner</strong>: <span class="pet-location">Warren, MI</span><br/><br/>
+            <!--<button class="btn btn-default btn-approve" id="btnApprove" type="button" data-id="0">Approve</button>-->
+            <!--<button class="btn btn-default btn-reject" id="btnReject" type="button" data-id="0">Reject</button>-->            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/truffle-contract.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

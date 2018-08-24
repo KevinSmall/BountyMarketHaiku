@@ -1,0 +1,14 @@
+# Deployed Addresses
+Deploy your application onto the Rinkeby test network. Include a document called deployed_addresses.txt that describes where your contracts live on the test net.
+
+## Deployed Contract 
+The [flattened contract](/remix/BountyMarketHaikuFlattened.sol) was deployed to Rinkeby with [this transaction](https://rinkeby.etherscan.io/tx/0xf7761edce851a397109df5a3178ce9aaf1fa7c4f801a14df5ce6ebb9b35e6090). Here, you can see the deployed contract with verified source code:
+https://rinkeby.etherscan.io/address/0x3d8d27e0577d4e4f2dfdcf772a7f556a9036d21f#code
+
+## Interacting with Deployed Contract
+Interact with it in Remix (paste in code found in folder /remix/BountyMarketHaikuFlattened.sol) or use the Etherscan "Write Contract" beta:
+https://rinkeby.etherscan.io/address/0x3d8d27e0577d4e4f2dfdcf772a7f556a9036d21f#writeContract
+
+In both cases, use MetaMask to connect to Rinkeby.
+
+My JavaScript knowledge was not sufficient to let me configure the UI to work with this deployement.
